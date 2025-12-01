@@ -12,3 +12,6 @@ def function_based_view(request):
 class class_based_view(View):
     def get(self, request):
         return HttpResponse("Hello you! Created the first class-based view!")
+
+def root_url_view(request):
+    return HttpResponse("Hello you! This is the root or home page!")

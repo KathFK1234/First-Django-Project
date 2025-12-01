@@ -3,6 +3,7 @@ from . import views
 
 # Defining a list that contains all the addresses and their associated views
 urlpatterns = [
+    path('', views.root_url_view), # This path directs user view to the root or home page of the app
     path('function', views.function_based_view), # This path directs user view to the function-based view
     path('class', views.class_based_view.as_view()), # This path directs user to the class-based view
 ]
