@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpResponse
 from django.views import View
 
 # Create your views here.
@@ -9,6 +9,6 @@ def function_based_view(request):
     return HttpResponse("Hello World! Created the first function-based view!")
 
 # Class-based view:
-class class_based_view():
+class class_based_view(View):
     def get(self, request):
         return HttpResponse("Hello you! Created the first class-based view!")
