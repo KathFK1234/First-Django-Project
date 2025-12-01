@@ -3,12 +3,12 @@ from django.http import HttpRequest, HttpResponse
 from django.views import View
 
 # Create your views here.
-# Make sure to link the views to addresses, ie, URL mapping
+# Make sure to link the views to addresses, ie, URL mapping, at the app and project levels
 # Function-based view:
-def hello_world(request):
-    return HttpResponse("Hello World!")
+def function_based_view(request):
+    return HttpResponse("Hello World! Created the first function-based view!")
 
 # Class-based view:
-class first_classb_view():
+class class_based_view():
     def get(self, request):
-        return HttpResponse("Created the first class-based view!")
+        return HttpResponse("Hello you! Created the first class-based view!")
