@@ -20,5 +20,6 @@ from django.urls import path, include # added the include for use as a function 
 urlpatterns = [
     path('', include('first_django_app.urls')), # This maps the root page of the project to the same home page as of the first app home page
     path('admin/', admin.site.urls),
-    path('app/', include('first_django_app.urls')), # project-level URL mapping including the file in the app level with the URLs
+    path('firstapp/', include('first_django_app.urls')), # project-level URL mapping including the file in the app level with the URLs
+    path('secondapp/', include('second_django_app.urls')),
 ]
