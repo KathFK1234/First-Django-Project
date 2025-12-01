@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'first_django_app', # Adding app to settings file
 ]
 
 MIDDLEWARE = [
